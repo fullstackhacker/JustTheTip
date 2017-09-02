@@ -15,6 +15,7 @@
 		45AEC94A1F3EB2F6008EC71E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AEC9481F3EB2F6008EC71E /* LaunchScreen.storyboard */; };
 		45AEC9551F3EB2F6008EC71E /* Just_the_TipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AEC9541F3EB2F6008EC71E /* Just_the_TipTests.swift */; };
 		45AEC9601F3EB2F6008EC71E /* Just_the_TipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AEC95F1F3EB2F6008EC71E /* Just_the_TipUITests.swift */; };
+		45E50BB81F5B32B7001B1320 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 45E50BB71F5B32B7001B1320 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		45AEC95B1F3EB2F6008EC71E /* Just the TipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Just the TipUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AEC95F1F3EB2F6008EC71E /* Just_the_TipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Just_the_TipUITests.swift; sourceTree = "<group>"; };
 		45AEC9611F3EB2F6008EC71E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45E50BB71F5B32B7001B1320 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		45AEC9331F3EB2F6008EC71E = {
 			isa = PBXGroup;
 			children = (
+				45E50BB71F5B32B7001B1320 /* README.md */,
 				45AEC93E1F3EB2F6008EC71E /* Just the Tip */,
 				45AEC9531F3EB2F6008EC71E /* Just the TipTests */,
 				45AEC95E1F3EB2F6008EC71E /* Just the TipUITests */,
@@ -264,6 +267,7 @@
 			files = (
 				45AEC9421F3EB2F6008EC71E /* ViewController.swift in Sources */,
 				45AEC9401F3EB2F6008EC71E /* AppDelegate.swift in Sources */,
+				45E50BB81F5B32B7001B1320 /* README.md in Sources */,
 				4514D7BD1F481961008F78C0 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
