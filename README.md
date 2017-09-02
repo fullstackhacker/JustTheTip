@@ -25,7 +25,7 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 * [x] Shaking clears the bill amount
-* 
+* [x] Clear textfield button when not editting
 
 ## Video Walkthrough 
 

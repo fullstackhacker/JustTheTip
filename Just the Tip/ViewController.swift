@@ -88,8 +88,13 @@ class ViewController: UIViewController {
         let tip = bill * tipPercentage
         let total = bill + tip
         
-        tipLabel.text = String(format: "$%.2f", tip)
-        totalLabel.text = String(format: "$%.2f", total)
+        let currencyFormatter = NumberFormatter()
+        currencyFormatter.usesGroupingSeparator = true
+        currencyFormatter.numberStyle = .currency
+        currencyFormatter.locale = NSLocale.current
+        
+        tipLabel.text = currencyFormatter.string(from: tip as NSNumber)
+        totalLabel.text = currencyFormatter.string(from: total as NSNumber)
     }
 
 }
