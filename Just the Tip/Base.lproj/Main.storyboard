@@ -44,24 +44,32 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p0M-PW-1xj">
-                                <rect key="frame" x="159" y="223" width="200" height="37"/>
+                                <rect key="frame" x="256" y="223" width="103" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$0.00" textAlignment="right" minimumFontSize="27" clearButtonMode="unlessEditing" id="Nmf-lh-R33">
-                                <rect key="frame" x="150" y="104" width="209" height="92"/>
+                                <rect key="frame" x="150" y="134" width="209" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="YdQ-Ql-2mN"/>
+                                    <action selector="updateBillAmount:" destination="BYZ-38-t0r" eventType="editingChanged" id="1El-SJ-icX"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bNP-sA-EoB">
                                 <rect key="frame" x="159" y="349" width="200" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GaE-g1-OYx">
+                                <rect key="frame" x="228" y="224" width="63" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -83,6 +91,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="billField" destination="Nmf-lh-R33" id="nXe-XA-W9c"/>
+                        <outlet property="currentTipPercentage" destination="GaE-g1-OYx" id="iUm-kg-M0f"/>
                         <outlet property="tipLabel" destination="p0M-PW-1xj" id="jmC-jI-I7b"/>
                         <outlet property="totalLabel" destination="bNP-sA-EoB" id="8uO-hw-WJ8"/>
                     </connections>

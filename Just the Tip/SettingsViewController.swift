@@ -13,7 +13,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var defaultTipValueLabel: UILabel!
     
     let storedTipKey = "default_tip"
-    let labelFormat = "%d%"
+    let labelFormat = "%d%%"
     
     override func viewDidLoad() {
         super.viewDidLoad()
