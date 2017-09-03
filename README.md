@@ -37,9 +37,9 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 As part of your pre-work submission, please reflect on the app and answer the following questions below:
 
-**Question 1**: "What are your reactions to the iOS app development platform so far? How would you describe outlets and actions to another developer? Bonus: any idea how they are being implemented under the hood? (It might give you some ideas if you right-click on the Storyboard and click Open As->Source Code")
+### Question 1:
 
-**Answer:** 
+#### "What are your reactions to the iOS app development platform so far? How would you describe outlets and actions to another developer? Bonus: any idea how they are being implemented under the hood? (It might give you some ideas if you right-click on the Storyboard and click Open As->Source Code")
 
 Just like the video said, coming from a web app developer background, the whole drag and drop for the UI felt a little dirty.
 xCode seems difficult to manage on a smaller screen, but I'm sure as I understand the UI better, it'll get easier.
@@ -51,10 +51,15 @@ Reading a value from a sliderbar is another.
 An action is how the view tells the view controller something happened.
 Recalculating a tip whenever a text field updates is an action. 
 
-Question 2: "Swift uses [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID49) (ARC), which is not a garbage collector, to manage memory. Can you explain how you can get a strong reference cycle for closures? (There's a section explaining this concept in the link, how would you summarize as simply as possible?)"
 
-**Answer:**
 
+### Question 2: 
+
+#### "Swift uses [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID49) (ARC), which is not a garbage collector, to manage memory. Can you explain how you can get a strong reference cycle for closures? (There's a section explaining this concept in the link, how would you summarize as simply as possible?)"
+
+Closures are great for passing around values without passing around explicit references to them. This makes sure that the caller doesn't mutate/change anything that the callee didn't expect. It's essentially a blackbox. If we don't assign a reference to the closure, the internal references will disappear with closure. When we reference the closure in a property, but the closure doesn't reference any of the instances properties, the closure and instance will be deallocated when there aren't any more references ot teh instance.
+
+The problem exists when the closure make a reference to the instance or one of its properties/methods. Since that reference is "locked away" in the closure, we can't unreference it. The closure can't be deallocated since a reference to it exists in that instance.
 
 
 ## License
