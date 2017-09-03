@@ -4,7 +4,7 @@ Just the Tip is a tip calculator application for iOS.
 
 Submitted by: Mushaheed Kapadia
 
-Time spent: 6 hours spent in total
+Time spent: 9 hours spent in total
 
 
 ## User Stories
